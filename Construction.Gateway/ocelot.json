@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/constructionservice",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7198
+        }
+      ],
+      "UpstreamPathTemplate": "/api/constructionservice",
+      "UpstreamHttpMethod": [ "POST", "GET", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/client",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7198
+        }
+      ],
+      "UpstreamPathTemplate": "/api/client",
+      "UpstreamHttpMethod": [ "POST", "GET", "PUT", "DELETE" ]
+    }
+  ]
+}
